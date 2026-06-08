@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 7000;
 
 app.get("/", (req, res) => {
      res.status(200).json({
-       message : "Hello from DevOps Bootcamp"
+       message : "Hello from DevOps Bootcamp V2"
   })
 });
 
@@ -17,7 +17,7 @@ app.get('/health', (req, res) => {
     status: 'OK',
     uptime: process.uptime(),
        timestamp: new Date(),
-    message: 'Server is healthy'
+    message: 'Server is healthy and running smoothly'
   });
 });
 
